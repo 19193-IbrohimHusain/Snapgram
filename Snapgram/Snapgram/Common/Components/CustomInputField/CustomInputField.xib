@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomInputField" customModule="Snapgram" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="kiS-K9-qdo" id="LGF-2l-fOG"/>
+                <outlet property="textField" destination="5qd-j3-An9" id="l5Z-SG-gE7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qd-j3-An9">
+                    <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="didEndEditing" destination="-1" eventType="editingDidEnd" id="gCg-DK-cBi"/>
+                        <action selector="didEndEditing" destination="-1" eventType="editingDidEndOnExit" id="l9P-8m-d92"/>
+                        <action selector="inputTapTextArea" destination="-1" eventType="editingDidBegin" id="B1R-7Q-fRg"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiS-K9-qdo">
+                    <rect key="frame" x="0.0" y="58" width="353" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="khV-eY-dzi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kiS-K9-qdo" firstAttribute="top" secondItem="5qd-j3-An9" secondAttribute="bottom" constant="8" symbolic="YES" id="1cW-Wm-ei4"/>
+                <constraint firstAttribute="trailing" secondItem="kiS-K9-qdo" secondAttribute="trailing" id="Aie-Mi-6wz"/>
+                <constraint firstItem="5qd-j3-An9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CBx-Pu-PE7"/>
+                <constraint firstAttribute="bottom" secondItem="kiS-K9-qdo" secondAttribute="bottom" id="KRx-YG-IHv"/>
+                <constraint firstItem="5qd-j3-An9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QAU-2p-dHX"/>
+                <constraint firstItem="kiS-K9-qdo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vEe-PO-6fV"/>
+                <constraint firstAttribute="trailing" secondItem="5qd-j3-An9" secondAttribute="trailing" id="wbY-p1-lbU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-24" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

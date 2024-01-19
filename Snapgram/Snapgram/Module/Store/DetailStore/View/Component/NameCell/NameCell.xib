@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NameCell" customModule="Snapgram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike ZoomFly X14" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nr-hc-wTd">
+                        <rect key="frame" x="15.999999999999993" y="7.9999999999999982" width="115.33333333333331" height="16.333333333333329"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp.3.300.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG9-40-T8y">
+                        <rect key="frame" x="16" y="32.333333333333336" width="97" height="18.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terjual 715" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZD-yK-u7a">
+                        <rect key="frame" x="16" y="67" width="59" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuy-eS-mEk">
+                        <rect key="frame" x="347" y="26.666666666666671" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="JZX-Bg-qYb"/>
+                            <constraint firstAttribute="height" constant="30" id="Pzc-1C-pv5"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="onLikeBtnTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="jb0-I9-EC8"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-XH-Uig">
+                        <rect key="frame" x="91" y="62" width="247" height="24"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-Hq-Dqa">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="fTu-pt-O1l"/>
+                                    <constraint firstAttribute="height" constant="24" id="xwe-8D-Hu4"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" imagePadding="4" buttonSize="small" titleAlignment="leading">
+                                    <imageReference key="image" image="star.fill" catalog="system" symbolScale="small"/>
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="strokeColor" systemColor="systemGrayColor"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14" scale="small"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5.0 (229)">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WDV-D6-1el">
+                                <rect key="frame" x="118" y="0.0" width="65" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="T8y-2s-jW8"/>
+                                    <constraint firstAttribute="height" constant="24" id="VWu-Do-vLp"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="28" imagePadding="4" buttonSize="small" titleAlignment="leading">
+                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="small"/>
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="strokeColor" systemColor="systemGrayColor"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14" scale="small"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-9t-fkd">
+                                <rect key="frame" x="191" y="0.0" width="56" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="IMf-yw-nOW"/>
+                                    <constraint firstAttribute="width" constant="56" id="aEk-Ig-4bN"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14" scale="small"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="1" imagePadding="4">
+                                    <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14" scale="small"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QZD-yK-u7a" firstAttribute="top" secondItem="NG9-40-T8y" secondAttribute="bottom" constant="16" id="6D8-Oy-Up3"/>
+                <constraint firstItem="jMV-XH-Uig" firstAttribute="leading" secondItem="QZD-yK-u7a" secondAttribute="trailing" constant="16" id="FD7-QJ-hoG"/>
+                <constraint firstItem="QZD-yK-u7a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="HuK-tr-HId"/>
+                <constraint firstItem="NG9-40-T8y" firstAttribute="top" secondItem="0Nr-hc-wTd" secondAttribute="bottom" constant="8" symbolic="YES" id="TqO-D1-g0t"/>
+                <constraint firstItem="0Nr-hc-wTd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Zz3-xN-Rle"/>
+                <constraint firstItem="vuy-eS-mEk" firstAttribute="centerY" secondItem="NG9-40-T8y" secondAttribute="centerY" id="bM1-kX-xCQ"/>
+                <constraint firstItem="0Nr-hc-wTd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="cX9-zd-zTy"/>
+                <constraint firstItem="NG9-40-T8y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="l1c-EJ-rAb"/>
+                <constraint firstAttribute="trailing" secondItem="vuy-eS-mEk" secondAttribute="trailing" constant="16" id="rQs-R4-Yea"/>
+                <constraint firstItem="jMV-XH-Uig" firstAttribute="centerY" secondItem="QZD-yK-u7a" secondAttribute="centerY" id="tdi-PJ-qiC"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="discussionBtn" destination="VDG-9t-fkd" id="1G4-Kc-z5z"/>
+                <outlet property="likeBtn" destination="vuy-eS-mEk" id="Am1-fP-4FU"/>
+                <outlet property="productName" destination="0Nr-hc-wTd" id="ziH-de-fRd"/>
+                <outlet property="productPrice" destination="NG9-40-T8y" id="FNi-Aa-Xbg"/>
+                <outlet property="reviewBtn" destination="jMW-Hq-Dqa" id="bm5-uB-ttD"/>
+                <outlet property="reviewerPhotoBtn" destination="WDV-D6-1el" id="blb-EK-P11"/>
+                <outlet property="soldAmount" destination="QZD-yK-u7a" id="ac9-MV-xU9"/>
+            </connections>
+            <point key="canvasLocation" x="-86.25954198473282" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

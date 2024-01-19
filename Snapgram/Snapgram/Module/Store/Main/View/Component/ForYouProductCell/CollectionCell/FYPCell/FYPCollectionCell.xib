@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FYPCollectionCell" customModule="Snapgram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-xG-bDv">
+                        <rect key="frame" x="2" y="2" width="196" height="296"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adidas NMD R1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-1c-Hnt">
+                                <rect key="frame" x="16" y="230" width="164" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp.2.400.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-jQ-uYs">
+                                <rect key="frame" x="16" y="252" width="164" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank Image" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-KP-mUN">
+                                <rect key="frame" x="0.0" y="0.0" width="196" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="wZ0-Gs-12D"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc7-F3-5PC">
+                                <rect key="frame" x="16" y="208" width="164" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tc7-F3-5PC" firstAttribute="top" secondItem="VZz-KP-mUN" secondAttribute="bottom" constant="8" symbolic="YES" id="2uP-Ni-vzN"/>
+                            <constraint firstAttribute="trailing" secondItem="VZz-KP-mUN" secondAttribute="trailing" id="5qq-0L-VYd"/>
+                            <constraint firstItem="cjp-1c-Hnt" firstAttribute="top" secondItem="Tc7-F3-5PC" secondAttribute="bottom" constant="8" id="6Z3-C1-O9Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Tc7-F3-5PC" secondAttribute="trailing" constant="16" id="Ci0-zc-uAC"/>
+                            <constraint firstAttribute="trailing" secondItem="cjp-1c-Hnt" secondAttribute="trailing" constant="16" id="Pvd-mf-i8w"/>
+                            <constraint firstAttribute="trailing" secondItem="oJG-jQ-uYs" secondAttribute="trailing" constant="16" id="TGw-fu-ZpK"/>
+                            <constraint firstItem="VZz-KP-mUN" firstAttribute="leading" secondItem="iWE-xG-bDv" secondAttribute="leading" id="Y7X-nz-vzb"/>
+                            <constraint firstItem="oJG-jQ-uYs" firstAttribute="top" secondItem="cjp-1c-Hnt" secondAttribute="bottom" constant="8" id="azL-Nl-cOW"/>
+                            <constraint firstItem="VZz-KP-mUN" firstAttribute="top" secondItem="iWE-xG-bDv" secondAttribute="top" id="bMH-Ls-6DH"/>
+                            <constraint firstItem="cjp-1c-Hnt" firstAttribute="leading" secondItem="iWE-xG-bDv" secondAttribute="leading" constant="16" id="fWW-WY-FNm"/>
+                            <constraint firstItem="Tc7-F3-5PC" firstAttribute="leading" secondItem="iWE-xG-bDv" secondAttribute="leading" constant="16" id="tU3-cR-YLG"/>
+                            <constraint firstItem="oJG-jQ-uYs" firstAttribute="leading" secondItem="iWE-xG-bDv" secondAttribute="leading" constant="16" id="vNa-zx-RPX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iWE-xG-bDv" secondAttribute="bottom" constant="2" id="AEt-Hg-xyj"/>
+                <constraint firstItem="iWE-xG-bDv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Spg-nG-i3a"/>
+                <constraint firstItem="iWE-xG-bDv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="uHH-3E-Q0P"/>
+                <constraint firstAttribute="trailing" secondItem="iWE-xG-bDv" secondAttribute="trailing" constant="2" id="uqK-h5-izU"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bgView" destination="iWE-xG-bDv" id="NnT-it-dU4"/>
+                <outlet property="productCategory" destination="Tc7-F3-5PC" id="g78-li-T6G"/>
+                <outlet property="productImg" destination="VZz-KP-mUN" id="vZW-kI-Ezt"/>
+                <outlet property="productName" destination="cjp-1c-Hnt" id="ezG-LO-6Sq"/>
+                <outlet property="productPrice" destination="oJG-jQ-uYs" id="aum-GM-CUP"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Blank Image" width="1848" height="1652"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

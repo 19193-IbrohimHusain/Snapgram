@@ -1,0 +1,69 @@
+PODS:
+  - Alamofire (5.8.1)
+  - Differentiator (5.0.0)
+  - FloatingPanel (2.8.0)
+  - GoogleMaps (8.2.0):
+    - GoogleMaps/Maps (= 8.2.0)
+  - GoogleMaps/Base (8.2.0)
+  - GoogleMaps/Maps (8.2.0):
+    - GoogleMaps/Base
+  - Kingfisher (7.10.0)
+  - lottie-ios (4.3.3)
+  - netfox (1.21.0)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SkeletonView (1.30.4)
+
+DEPENDENCIES:
+  - Alamofire (= 5.8.1)
+  - FloatingPanel (= 2.8.0)
+  - GoogleMaps (= 8.2.0)
+  - Kingfisher (= 7.10.0)
+  - lottie-ios (= 4.3.3)
+  - netfox (= 1.21.0)
+  - RxCocoa (= 6.6.0)
+  - RxDataSources (= 5.0.0)
+  - RxRelay (= 6.6.0)
+  - RxSwift (= 6.6.0)
+  - SkeletonView (= 1.30.4)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - FloatingPanel
+    - GoogleMaps
+    - Kingfisher
+    - lottie-ios
+    - netfox
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  FloatingPanel: f585be005983e66f8f4932f93ca46bf9f09dae3a
+  GoogleMaps: 081f2547b60a1c0870a8f49166a653900e5055d5
+  Kingfisher: a18f05d3b6d37d8650ee4a3e61d57a28fc6207f6
+  lottie-ios: 25e7b2675dad5c3ddad369ac9baab03560c5bfdd
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+
+PODFILE CHECKSUM: 304c40b4bd8e2912fc5ec8965babb698c543b92a
+
+COCOAPODS: 1.14.3

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashScreenViewController" customModule="Snapgram" customModuleProvider="target">
+            <connections>
+                <outlet property="splashScreen" destination="a66-nO-hzM" id="gjO-K1-PU7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a66-nO-hzM" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="FYp-yd-Uwm"/>
+                        <constraint firstAttribute="height" constant="200" id="Xl7-Q4-l1C"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="splashscreen"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snapgram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-ts-JMQ">
+                    <rect key="frame" x="154.66666666666666" y="732" width="84" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made with love ❤️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-h8-bKE">
+                    <rect key="frame" x="122" y="763" width="149" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bUk-ts-JMQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0ma-SP-YqO"/>
+                <constraint firstItem="dVe-h8-bKE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5am-Nx-YUf"/>
+                <constraint firstAttribute="bottom" secondItem="dVe-h8-bKE" secondAttribute="bottom" constant="68" id="DHi-M6-QFi"/>
+                <constraint firstItem="dVe-h8-bKE" firstAttribute="top" secondItem="bUk-ts-JMQ" secondAttribute="bottom" constant="10" id="Q0R-Y2-Tyw"/>
+                <constraint firstItem="a66-nO-hzM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gar-BQ-2Tf"/>
+                <constraint firstItem="a66-nO-hzM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qrM-7m-ROD"/>
+            </constraints>
+            <point key="canvasLocation" x="-27" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

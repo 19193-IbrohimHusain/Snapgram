@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailProductViewController" customModule="Snapgram" customModuleProvider="target">
+            <connections>
+                <outlet property="addToCartBtn" destination="i5y-kK-23i" id="sfu-am-GJa"/>
+                <outlet property="chatBtn" destination="eEF-n5-p39" id="3T4-6X-iVr"/>
+                <outlet property="detailCollection" destination="xsL-ms-8Gm" id="aRR-me-yG6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-ms-8Gm">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3p1-J2-pYd">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmo-HG-1bX">
+                    <rect key="frame" x="0.0" y="762" width="393" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEF-n5-p39">
+                            <rect key="frame" x="16" y="15.999999999999996" width="66.666666666666671" height="43.666666666666657"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <imageReference key="image" image="ellipsis.bubble" catalog="system" symbolScale="large"/>
+                                <backgroundConfiguration key="background">
+                                    <color key="strokeColor" systemColor="systemBlueColor"/>
+                                </backgroundConfiguration>
+                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenWhenSkeletonIsActive" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-kK-23i">
+                            <rect key="frame" x="127" y="13" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Kdu-m2-I9w"/>
+                                <constraint firstAttribute="width" constant="250" id="XY7-cz-Jit"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="Add to cart" imagePadding="8"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenWhenSkeletonIsActive" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="eEF-n5-p39" firstAttribute="top" secondItem="nmo-HG-1bX" secondAttribute="top" constant="16" id="8Oz-Ri-5dV"/>
+                        <constraint firstItem="i5y-kK-23i" firstAttribute="centerY" secondItem="eEF-n5-p39" secondAttribute="centerY" id="Yrq-LI-e7p"/>
+                        <constraint firstItem="eEF-n5-p39" firstAttribute="leading" secondItem="nmo-HG-1bX" secondAttribute="leading" constant="16" id="zAq-Vm-BEW"/>
+                        <constraint firstAttribute="trailing" secondItem="i5y-kK-23i" secondAttribute="trailing" constant="16" id="zEK-eK-SMg"/>
+                        <constraint firstAttribute="height" constant="90" id="zM0-3v-Xqc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenWhenSkeletonIsActive" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nmo-HG-1bX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Jd-Tk-tJy"/>
+                <constraint firstItem="xsL-ms-8Gm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EVS-09-qZI"/>
+                <constraint firstAttribute="trailing" secondItem="xsL-ms-8Gm" secondAttribute="trailing" id="FKb-qz-Hhy"/>
+                <constraint firstItem="xsL-ms-8Gm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GVd-Me-3PT"/>
+                <constraint firstAttribute="trailing" secondItem="nmo-HG-1bX" secondAttribute="trailing" id="IKe-NG-0WP"/>
+                <constraint firstAttribute="bottom" secondItem="nmo-HG-1bX" secondAttribute="bottom" id="bxg-CT-NVx"/>
+                <constraint firstAttribute="bottom" secondItem="xsL-ms-8Gm" secondAttribute="bottom" id="nh3-En-93n"/>
+            </constraints>
+            <point key="canvasLocation" x="125.95419847328243" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="ellipsis.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FYPHeader" customModule="Snapgram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUV-Sf-TTj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uDQ-5P-YWX">
+                            <rect key="frame" x="0.0" y="10" width="320" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Zsf-Uh-ejz"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JUI-2I-gDz">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUserInteractionDisabledWhenSkeletonIsActive" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="uDQ-5P-YWX" firstAttribute="leading" secondItem="RUV-Sf-TTj" secondAttribute="leading" id="BMw-lK-pRd"/>
+                        <constraint firstAttribute="trailing" secondItem="uDQ-5P-YWX" secondAttribute="trailing" id="HGh-me-0op"/>
+                        <constraint firstAttribute="bottom" secondItem="uDQ-5P-YWX" secondAttribute="bottom" constant="10" id="J1B-qS-FLc"/>
+                        <constraint firstItem="uDQ-5P-YWX" firstAttribute="top" secondItem="RUV-Sf-TTj" secondAttribute="top" constant="10" id="R6t-lM-TOF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="RUV-Sf-TTj" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="6Wz-96-8vL"/>
+                <constraint firstAttribute="bottom" secondItem="RUV-Sf-TTj" secondAttribute="bottom" id="Ql8-py-msv"/>
+                <constraint firstItem="RUV-Sf-TTj" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="TDs-o9-831"/>
+                <constraint firstAttribute="trailing" secondItem="RUV-Sf-TTj" secondAttribute="trailing" id="dTs-xu-cKf"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isUserInteractionDisabledWhenSkeletonIsActive" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="headerCollection" destination="uDQ-5P-YWX" id="Ap8-6Y-EIf"/>
+            </connections>
+            <point key="canvasLocation" x="-93.129770992366403" y="19.718309859154932"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
